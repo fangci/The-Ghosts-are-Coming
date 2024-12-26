@@ -1,0 +1,322 @@
+body{    
+    font-family: 'Doto', sans-serif;
+    background-color: #432534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    padding: 10px 0;
+    color: #EFD6AC;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+#gamecontainer{
+    position: relative;
+    width: 150vh;
+    height: 75vh;
+    overflow: hidden;
+    background-color: #04151F;
+}
+.ghost{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost img{
+    width: 80%;
+    height: 80%;
+}
+.task img{
+    width: 30px;
+    height: 30px;
+}
+#lifecontainer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+}
+#gameover, #win{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #C44900;
+    font-size: 80px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+#score{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #C44900;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+#highscore{
+    color: #EFD6AC;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+#coins{
+    color: #EFD6AC;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+#coins img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#character{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#character img{
+    width: 100%;
+    height: 100%;
+}
+#startbutton{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C44900;
+    color: #EFD6AC;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Doto', sans-serif;
+}
+#startbutton:hover{
+    background-color: #EFD6AC;
+    color: #C44900;
+    cursor: pointer;
+}
+#startscreen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #EFD6AC;
+}
+#startscreen p{
+    font-size: 20px;
+    text-align: center;
+}
+#startscreen p img{
+    margin: 0;
+    width: 20px;
+}
+#startscreen h2{
+    font-size: 40px;
+    margin: 15px 0;
+}
+#restartbutton{
+    width: 200px;
+    height: 50px;
+    display: none;
+    background-color: #C44900;
+    color: #EFD6AC;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Doto', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#restartbutton:hover{
+    background-color: #EFD6AC;
+    color: #C44900;
+    cursor: pointer;
+}
+#shopbutton, #bookbutton{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#infinitbutton {
+    position: absolute;
+    background-color: #C44900;
+    border: none;
+    cursor: pointer;
+    right: 20%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#infinitbutton img {
+    width: 20px;
+    height: 20px;
+}
+#infinitbutton p {
+    color: #EFD6AC;
+    margin-left: 5px;
+}
+#shopbutton{
+    left: 15%;
+}
+#bookbutton{
+    right: 15%;
+}
+#shopbutton img, #bookbutton img{
+    width: 20px;
+    height: 20px;
+}
+#shop, #book{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #183A37;
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    z-index: 2;
+    color: #EFD6AC;
+    z-index: 2;
+}
+#closebutton, #closebutton2{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Doto', sans-serif;
+}
+#closebutton:hover, #closebutton2:hover{
+    cursor: pointer;
+}
+#closebutton img, #closebutton2 img{
+    width: 40px;
+    height: 40px;
+}
+#shop h2, #book h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+#buybutton{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C44900;
+    color: #EFD6AC;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Doto', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#buybutton:hover{
+    background-color: #432534;
+    color: #EFD6AC;
+    cursor: pointer;
+}
+#treasure{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#collection{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#collection img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+@keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    12.5% { transform: translate(calc(-50% - 10px), calc(-50% - 5px)) rotate(-5deg); }
+    25% { transform: translate(calc(-50% + 10px), calc(-50% + 5px)) rotate(5deg); }
+    37.5% { transform: translate(calc(-50% - 10px), calc(-50% + 5px)) rotate(-5deg); }
+    50% { transform: translate(-50%, -50%) rotate(0deg); }
+    62.5% { transform: translate(calc(-50% - 10px), calc(-50% - 5px)) rotate(-5deg); }
+    75% { transform: translate(calc(-50% + 10px), calc(-50% + 5px)) rotate(5deg); }
+    87.5% { transform: translate(calc(-50% - 10px), calc(-50% + 5px)) rotate(-5deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
+}
+#skill{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ghosts are Coming!</title>
+        <link rel="icon" type="image/png" href="images_and_sounds/ghost-fill.png">
+        <link rel="stylesheet" type="text/css" href="Term_Project.css">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@700&family=Londrina+Sketch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Ghosts are Coming! Can you survive the night?</h1>
+        </header>
+        <main>
+            <div id="startscreen">
+                <h2>Guide</h2>
+                <p>
+                    Use the arrow keys and number keys to elimate the FIRST directions or numbers <img src="images_and_sounds/arrow-square-up-fill.png"><img src="images_and_sounds/arrow-square-right-fill.png"><img src="images_and_sounds/arrow-square-down-fill.png"><img src="images_and_sounds/arrow-square-left-fill.png"> <img src="images_and_sounds/number-square-zero-bold.png"><img src="images_and_sounds/number-square-one-bold.png"><img src="images_and_sounds/number-square-two-bold.png"><img src="images_and_sounds/number-square-three-bold.png"> above the ghosts.
+                    <br>If the ghost touches you, you will lose a life. You have three lives. If you lose all three lives,the game is over.
+                    <br>There also appears hearts <img src="images_and_sounds/heart-bold.png">. Use number keys to collect the hearts to gain an extra life.
+                    <br>The higher score you get, the more coins you earn. You can use the coins to buy items in the shop.
+                    <br>You can play in infinity mode or normal mode. In infinity mode, you can challenge yourself and play as long as you want. In normal mode, you have to survive the night.
+                </p>
+                <button id="startbutton">Start Game</button>
+            </div>
+            <div id="gamecontainer">
+                <button id="restartbutton">Restart Game</button>
+            </div>
+            <div id="shop">
+                <h2>Shop</h2>
+                <button id="closebutton">
+                    <img src="images_and_sounds/x-square-fill.png">
+                </button>
+                <div id="treasure">
+                    <img src="images_and_sounds/treasure-chest-fill.png">
+                </div>
+                <button id="buybutton">
+                    <img src="images_and_sounds/currency-dollar-simple-fill.png">
+                    <p>5</p>
+                </button>
+            </div>
+            <div id="book">
+                <h2>Collections</h2>
+                <button id="closebutton2">
+                    <img src="images_and_sounds/x-square-fill.png">
+                </button>
+                <div id="collection">
+                    <img src="images_and_sounds/bird-fill.png">
+                    <img src="images_and_sounds/butterfly-fill.png">
+                    <img src="images_and_sounds/cat-fill.png">
+                    <img src="images_and_sounds/cow-fill.png">
+                    <img src="images_and_sounds/dog-fill.png">
+                    <img src="images_and_sounds/fish-simple-fill.png">
+                    <img src="images_and_sounds/horse-fill.png">
+                    <img src="images_and_sounds/rabbit-fill.png">
+                </div>
+                <p id="skill"></p>
+            </div>
+        </main>
+        <footer>
+            <button id="shopbutton">
+                <img src="images_and_sounds/storefront-fill.png">
+            </button>
+            <button id="bookbutton">
+                <img src="images_and_sounds/book-fill.png">
+            </button>
+            <button id="infinitbutton">
+                <img src="images_and_sounds/infinity.png">
+                <p id="mode"></p>
+            </button>
+            <p id="highscore"></p>
+            <div id="coins">
+                <img src="images_and_sounds/currency-dollar-simple-fill.png">
+                <p id="coincount">0</p>
+            </div>
+        </footer>
+    </body>
+    <script src="Term_Project.js"></script>
+</html>
